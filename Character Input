@@ -1,0 +1,15 @@
+#Create a program that asks the user to enter their name and their age. 
+#Print out a message addressed to them that tells them the year that they will turn 100 years old.
+
+#character input
+
+your_name = raw_input("What is your name?\n")
+print "Hello " + your_name.title()
+your_age = input("Hey %s, What is your age now?\n" %your_name.title())
+current_year = input("Okay %s, what year is it now?\n"%your_name.title())
+
+def yrsold(x):
+    new = str((100 - your_age)+ current_year)
+    return "Hey "+your_name.title()+" you will be 100 years old in the year of "+str(new)
+
+print yrsold('your_age')
