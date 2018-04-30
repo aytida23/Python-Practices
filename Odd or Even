@@ -1,0 +1,20 @@
+#odd or even number by extra user input
+
+num = input("enter a number to check if its a multiple of 4 or not:\n")
+
+if num % 4 == 0:
+    print "This number "+str(num)+" is a multiple of 4 and also an even number"
+else:
+    print "This number "+str(num)+" is not a multiple of 4"
+
+print("\n")
+print "So here we will be entering two digits,\nto check if the first digit divides evenly by other digit or not\nAnd also the first digit is an even or odd number"
+num2 = input("enter your first digit to check if its an even or odd number:\n")
+check = input("enter another digit to divide it with previous entered number:\n")
+
+if num2 % 2 == 0 and num2 % check == 0:
+    print "This number "+str(num2)+" divides evenly by "+str(check)+", It shows that the number "+str(num2)+" is an even number"
+elif num2 % check == 0:
+    print "This number "+str(num2)+" divides by "+str(check)+" but number "+str(num2)+" is not an even number"
+else:
+    print "This number "+str(num2)+" doesn't divides evenly by "+str(check)
