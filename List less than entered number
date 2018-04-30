@@ -1,0 +1,10 @@
+#List Less Than Ten
+
+
+a = [2,4,6,1,3,9,7,12,45,13,64,23,28,20,55,57,50]
+num = input("Enter a number to return a new list that are smaller than this number : ")
+
+b = [each for each in a if each < num]
+
+print "This is the sorted list which are less than the entered number "+str(num)
+print sorted(b)
