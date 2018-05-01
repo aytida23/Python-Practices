@@ -1,0 +1,8 @@
+#List Overlap
+
+num = input("Enter any number that range a list : ")
+a = range(1,num+1)
+num1 = input("Enter any number that range another list: ")
+b = range(1,num1+1)
+c = [elem for elem in a for elem1 in b if elem == elem1]
+print "Here is our list of common numbers between two random list "+str(c)
