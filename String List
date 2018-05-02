@@ -1,0 +1,8 @@
+#String Lists to check for palindrome
+
+string = raw_input("Enter any string to know if its palindrome or not: ")
+
+if string[:] == string[::-1]:
+    print "Bingo! This word "+string+" is a real palindrome"
+else:
+    print "Well, this word "+string+" is not a plaindrome"
