@@ -1,0 +1,5 @@
+#List comprehension "One line code"
+
+a = [1,4,9,16,25,36,49,64,81,100]
+b = [each for each in a if each % 2 == 0]
+print b
