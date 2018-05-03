@@ -1,0 +1,41 @@
+#Rock Paper Scissors
+
+user1 = raw_input("Whats your name? :- ")
+user2 = raw_input("And your name? :- ")
+print "Alright "+user1.title()+" and "+user2.title()+" lets play rock, paper, and scissors"
+a = 1
+b = "rock"
+c = "scissor"
+d = "paper"
+while a == 1:
+    
+    user1_ans = raw_input("%s, You can choose from Rock, Paper, and Scissor to play the game: " %user1.title())
+    user2_ans = raw_input("%s, And You can choose from Rock, Paper, and Scissor to play the game: " %user2.title())
+
+    if user1_ans == b and user2_ans == c:
+        print "%s, Won the game" %user1.title()
+    elif user1_ans == c and user2_ans == d:
+        print "%s, Won the game" %user1.title()
+    elif user1_ans == d and user2_ans == b:
+        print "%s, Won the game" %user1.title()
+    elif user2_ans == b and user1_ans == c:
+        print "%s, Won the game" %user2.title()
+    elif user2_ans == c and user1_ans == d:
+        print "%s, Won the game" %user2.title()
+    elif user2_ans == d and user1_ans == b:
+        print "%s, Won the game" %user2.title()
+    elif user1_ans == b and user2_ans == b:
+        print "IT IS A DRAW!"
+    elif user1_ans == c and user2_ans == c:
+        print "IT IS A DRAW!"
+    elif user1_ans == d and user2_ans == d:
+        print "IT IS A DRAW!"
+    elif user1_ans == 'quit':
+        print "Okay %s, I'm out" %user2.title()
+        break;
+    elif user2_ans == 'quit':
+        break;
+    else:
+        print "INVALID ENTRY, PLEASE PLAY AGAIN WITH VALID ENTRIES!!!"
+
+
