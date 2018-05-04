@@ -1,0 +1,30 @@
+#Guessing game one
+
+import random as rand
+
+rand_num = rand.randint(1,9)
+num_of_guesses = 0
+a = 1
+
+user_name = raw_input("Hey, How do I call your name?\n")
+print "\n%s, WELCOME TO THE NUMBER GUESSING GAME!!!\nI have one random number in the range of 1 to 9(including 1 and 9 too)\nYour task is to guess the number in less number of guesses\nAs you only get 3 chances\nANYWAY ARE YOU READY FOR IT??\nOKAY LETS GO FOR IT\n"%user_name.title()
+
+while num_of_guesses != 5:
+    user = raw_input("Hey %s, can you guess the number? or Type exit to get out of the game :D\n\n" %user_name.title())
+    num_of_guesses+=1
+    if user == 'exit':
+        print "So %s, you really wanna get out of the game, Well GOODBYE!!\n" %user_name.title()
+        break
+    elif rand_num > int(user):
+        print "Try again %s, as your guess is too low.\n\n" %user_name.title()
+    elif rand_num < int(user):
+        print "Try again %s, as your guess is too high.\n\n" %user_name.title()
+    elif rand_num == int(user):
+        print "WHOA!!!:O %s, YOU GOT THE NUMBER!\nTHE NUMBER WAS " %user_name.title(),rand_num
+        print "So %s, you took {} guesses to get it exactly correct! NICE :3".format(num_of_guesses) %user_name.title()
+    else:
+        "ERROR!!!"
+
+print "The Correct number is {}".format(rand_num)
+print "THANKS FOR PLAYING THE GUESSING GAME %s\nYOUR CHANCES ARE OVER!!!" %user_name.upper()
+
