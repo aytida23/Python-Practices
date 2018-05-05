@@ -1,0 +1,12 @@
+#List Overlap Comprehensions
+
+import random as ran
+
+a = ran.sample(range(60),8)
+b = ran.sample(range(80),12)
+c = [i for i in a for j in b if i==j]
+
+print "Here is the first random list generated\n"+str(a)
+print "Here is the second random list generated\n"+str(b)
+print "\nSo below is the common numbers between the two list without duplicates"
+print "This is the list that has common numbers between the two random list:\n"+str(c)
