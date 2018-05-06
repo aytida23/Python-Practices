@@ -1,0 +1,13 @@
+#Check Primality Function
+
+num = input("Enter any number to check if its prime or not:-\n")
+
+def check_prime(num):
+    divisors = [i for i in range(2,num) if num % i == 0]
+    return divisors
+
+list_of_divisors = check_prime(num)
+if list_of_divisors == []:
+    print "This number {} is a PRIME number!".format(num)
+else:
+    print "\nThis number {} is not a PRIME number,\nIt do have divisors that are {} rather than 1 and itself".format(num,list_of_divisors)
