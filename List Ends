@@ -1,0 +1,11 @@
+#List Ends
+
+import random as ran
+ran_list = ran.sample(range(30),5)
+
+def list_ends():
+    b = [ran_list[0],ran_list[-1]]
+    return b
+
+print "So here is the list below\nThat has first & last nos of the random list {}".format(ran_list)
+print list_ends()
