@@ -26,4 +26,3 @@ while num_of_guesses != 5:
 
 print "The Correct number is {}".format(rand_num)
 print "THANKS FOR PLAYING THE GUESSING GAME %s\nYOUR CHANCES ARE OVER!!!" %user_name.upper()
-
