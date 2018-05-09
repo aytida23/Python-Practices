@@ -4,7 +4,6 @@ import random as rand
 
 rand_num = rand.randint(1,9)
 num_of_guesses = 0
-a = 1
 
 user_name = raw_input("Hey, How do I call your name?\n")
 print "\n%s, WELCOME TO THE NUMBER GUESSING GAME!!!\nI have one random number in the range of 1 to 9(including 1 and 9 too)\nYour task is to guess the number in less number of guesses\nAs you only get 3 chances\nANYWAY ARE YOU READY FOR IT??\nOKAY LETS GO FOR IT\n"%user_name.title()
