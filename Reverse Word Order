@@ -1,0 +1,14 @@
+#Reverse Word Order
+
+from __future__ import print_function
+
+user_string = raw_input("Enter a long string containing multiple words to get it in reverse order :-\n")
+
+def reverse_word_order(x):
+    abcd = []
+    abcd = user_string.split()
+    return ' '.join(map(str,abcd[::-1]))
+    
+
+print ("Here is the reversed set of strings that you entered :-")
+print (reverse_word_order(user_string))
